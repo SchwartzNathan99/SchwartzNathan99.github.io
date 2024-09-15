@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+​<html lang = "en">
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Classes
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="comingsoon.html">Class 1</a>
+              <a href="comingsoon.html">Class 2</a>
+              <a href="comingsoon.html">Class 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">My Assignments
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="comingsoon.html">Assignment 1</a>
+              <a href="comingsoon.html">Assignment 2</a>
+              <a href="comingsoon.html">Assignment 3</a>
+            </div>
+        </div>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="COP 4813 Class Content">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Nathan Schwartz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" />
+        <link href="form.css" rel="stylesheet" />
+        <link href="validate.css" rel="stylesheet" />
+        <title>Nathan Schwartz's Website</title>
+    </head>
+
+<body>
+   <section>
+      <h1>E-mail Form</h1>
+      <p>Required Item (*)</p>
+      <form action="mailto:you@yourdmainhere.com" method="post" enctype="text/plain" >
+         <label for="title">Title</label>
+         <input type="text" name="title" id="titleBox" list="titlelist"/>
+         <datalist id="titlelist">
+         <option value="Mr.">
+         <option value="Mrs.">
+         <option value="Ms.">
+         <option value="Prof.">
+         <option value="Dr.">
+         <option value="Assist. Prof.">
+         <option value="Prof.">
+         <option value="Asoc. Prof.">
+         </datalist>
+         <label for="firstname">First Name*</label>
+         <input type="text" name="firstName" id="fnBox" required/>
+         <label for="lastname">Last Name*</label>
+         <input type="text" name="lastName" id="lnBox" required/>
+         <label for="address">Address*</label>
+         <textarea type="text" name="address" id="addBox" required></textarea>
+         <label for="state">State*</label>
+         <input type="text" name="state" id="stBox" list="statelist" required pattern="[a-zA-Z]{2}" required/>
+         <datalist id="statelist">
+            <option value="AL">
+            <option value="AK">
+            <option value="AZ">
+            <option value="AS">
+            <option value="CA">
+            <option value="CO">
+            <option value="CT">
+            <option value="DE">
+            <option value="DC">
+            <option value="FL">
+            <option value="GA">
+            <option value="GU">
+            <option value="HI">
+            <option value="ID">
+            <option value="IL">
+            <option value="IN">
+            <option value="IA">
+            <option value="KS">
+            <option value="KY">
+            <option value="LA">
+            <option value="ME">
+            <option value="MD">
+            <option value="MA">
+            <option value="MI">
+            <option value="MN">
+            <option value="MS">
+            <option value="MO">
+            <option value="MT">
+            <option value="NE">
+            <option value="NV">
+            <option value="NH">
+            <option value="NJ">
+            <option value="NM">
+            <option value="NY">
+            <option value="NC">
+            <option value="ND">
+            <option value="MP">
+            <option value="OH">
+            <option value="OK">
+            <option value="OR">
+            <option value="PA">
+            <option value="PR">
+            <option value="RI">
+            <option value="SC">
+            <option value="SD">
+            <option value="TN">
+            <option value="TX">
+            <option value="TT">
+            <option value="UT">
+            <option value="VT">
+            <option value="VA">
+            <option value="VI">
+            <option value="WA">
+            <option value="WV">
+            <option value="WI">
+            <option value="WY">
+         </datalist>
+         <label for="city">City*</label>
+         <input type="text" name="city" id="cBox" required/>
+         <label for="lastname">Zip Code*</label>
+         <input type="text" name="zipCode" id="zpBox" required pattern="[0-9]{5}" required/>
+         <label for="email">Email*</label>
+         <input type="text" name="email" id="mailBox" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+         <label for="message">Message*</label>
+         <textarea type="text" name="message" id="messBox" required></textarea>
+         <label for="phoneNumber">Phone Number*</label>
+         <input type="text" name="phoneNumber" id="phoneBox" placeholder="(nnn)nnn-nnnn" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required/>
+         <label for="check">Confirmation: What is the last name of the 45th President?*</label>
+         <input type="text" name="check" id="chBox" required pattern = "[Tt]rump" required/>
+         <p>
+            <input type="submit" name="submit" value="Submit">
+         </p>
+      </form>
+   </section>
+
+   <footer>
+    Created by Nathan Schwartz
+   </footer>
+</body>
+</html>
