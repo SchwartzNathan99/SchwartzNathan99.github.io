@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+​<html lang = "en">
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Classes
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="comingsoon.html">Class 1</a>
+              <a href="comingsoon.html">Class 2</a>
+              <a href="comingsoon.html">Class 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">My Assignments
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="form.html">Assignment 1</a>
+              <a href="calculator.html">Assignment 2</a>
+              <a href="comingsoon.html">Assignment 3</a>
+            </div>
+        </div>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="COP 4813 Class Content">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Nathan Schwartz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" />
+        <title>Nathan Schwartz's Website</title>
+    </head>
+    <body>
+        <div style = "float: left; padding-right: 10px;">
+		
+			<h1> Calculator </h1>
+		
+			<!-- Equation inputs: -->
+			
+				<!-- Input 1 -->
+			<p> 
+				Equation 1: 
+				<input id = 'eq1' type = "text" name = "inter_fname"/> 
+				
+				Colour: 
+				<select id='colour1'>
+					<option value="black" selected>	black 	</option>
+					<option value="red">			red		</option>
+					<option value="blue">			blue	</option>
+					<option value="green">			green	</option>
+				</select> 
+			</p>
+			
+				<!-- Input 2 -->
+			<p> 
+				Equation 2: 
+				<input id = 'eq2' type = "text" name = "inter_fname"/> 
+				
+				Colour: 
+				<select id='colour2'>
+					<option value="black" selected>	black 	</option>
+					<option value="red">			red		</option>
+					<option value="blue">			blue	</option>
+					<option value="green">			green	</option>
+				</select> 
+			</p>
+			
+				<!-- Input 3 -->
+			<p> 
+				Equation 3: 
+				<input id = 'eq3' type = "text" name = "inter_fname"/> 
+				
+				Colour: 
+				<select id='colour3'>
+					<option value="black" selected>	black 	</option>
+					<option value="red">			red		</option>
+					<option value="blue">			blue	</option>
+					<option value="green">			green	</option>
+				</select> 
+			</p>
+			
+				<!-- Submit button -->
+			<button id = 'btnSubmit' > Submit </button>
+			
+				<!-- Instructions -->
+			<p> Enter your variables </p>
+		</div>	
+			
+		<!-- Graph and buttons -->
+		<div style = "float: left;">
+
+			<!-- Graph canvas -->
+			<div style = "float: left;">
+				<canvas id = "canvas" width = "500" height = "500" style = "border: 1px solid #000000;" > </canvas>
+			</div>
+			
+			<!-- Graph manipulation -->
+			<div style = "float: bottom;" >
+				
+				<!-- Axis Offset -->
+				<div style = "float:left" >
+			
+					<p style = "text-align: center"> Axis offset: </P>
+				
+					<div style = "float: bottom;" >
+					
+						<!-- Left button -->
+						<div style = "float: left" >
+							<button id = 'offset_left'> < </button>
+						</div>
+						
+						<!-- Up/down offset -->
+						<div style = "float: left" >
+								
+								<div style = "float: up;">
+									<button id = 'offset_up'> /\ </button>
+								</div>
+								
+								<button id = 'offset_down'> \/ </button>	
+						</div>
+						
+						<!-- Right button -->
+						<button id = 'offset_right'> > </button>
+					</div>
+				</div>
+				
+				<!-- Scale -->
+				
+					<!-- X axis: -->
+				<div style = "float: left; padding-left: 20px" > 
+					
+					<p style = "text-align: center"> Scale X </p>
+					
+					<div style = "float:bottom"> 
+						<button id = 'scale_x_plus'> + </button>
+						<button id = 'scale_x_minus'> - </button>
+					</div>
+				</div>
+				
+					<!-- Y axis: -->
+				<div style = "float: left; padding-left: 20px" > 
+					
+					<p style = "text-align: center"> Scale Y </p>
+					
+					<div style = "float:bottom"> 
+						<button id = 'scale_y_plus'> + </button>
+						<button id = 'scale_y_minus'> - </button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+        	
+		<!-- Generate graph via Javascript -->
+		<script src="graph.js"></script>
+
+		<!-- Event listeners -->
+		<script src ="input.js"></script>
+		
+		<!-- Execute functions -->
+		<script src ="calculator.js"></script>
+	
+</body>
+    
+</html>
