@@ -41,8 +41,8 @@
         <script>
             
             async function getData() {
-                const res = await fetch("jsondata.json");
-                data = JSON.parse(res);
+                //const res = await fetch("jsondata.json");
+                data = JSON.parse(fetch("jsondata.json"));
 
               let text = "<table border='1'>"
               for (let x in data)
