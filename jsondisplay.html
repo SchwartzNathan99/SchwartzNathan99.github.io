@@ -39,21 +39,18 @@
         </h1>
         <p id="table"></p>
         <script>
-            
-            async function getData() {
-                const res = await fetch("jsondata.json");
-                const data = await res.json();
-
-              let text = "<table border='1'>"
-              for (let x in data)
-              {
-                text += "<tr><td>" + data[x].title + " : " + data[x].year + "</td></tr>";
-              }
-              text += "</table>"    
-              document.getElementById("table").innerHTML = text;
-            }
-
-            getData();
+        
+            fetch("jsondata.json")
+                .then(res => res.json())
+                .then(data => {
+                    let text = "<table border='1'>"
+                    data.forEach(games =>
+                    {
+                      text += "<tr><td>" + data[x].title + " : " + data[x].year + "</td></tr>";
+                    });
+                    text += "</table>"    
+                    document.getElementById("table").innerHTML = text;
+                });
         </script>
         <footer>
             Created by Nathan Schwartz
