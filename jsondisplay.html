@@ -41,7 +41,7 @@
         <script>
             
             async function getData() {
-                const myObj = JSON.parse("jsondata.json");
+                const myObj = JSON.parse(fetch("jsondata.json"));
                 let text = "<table border='1'>"
                 for (let x in myObj) {
                   text += "<tr><td>" + myObj[x].title + " : " + myObj[x].year + "</td></tr>";
