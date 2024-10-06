@@ -37,10 +37,24 @@
         <h1>
             Nathan Schwartz's Website
         </h1>
-        <p>
-        A website created for COP4813 - Web Systems I at Daytona State College.
-        <p>
-        <img src="Seal_of_Daytona_State_College.png"/>
+        <p id="table"></p>
+        <script>
+            
+            async function getData() {
+                const res = await fetch("jsondata.json");
+                const data = await res.json();
+
+              let text = "<table border='1'>"
+              for (let x in data)
+              {
+                text += "<tr><td>" + data[x].title + "</td></tr>";
+              }
+              text += "</table>"    
+              document.getElementById("table").innerHTML = text;
+            }
+
+            getData();
+        </script>
         <footer>
             Created by Nathan Schwartz
         </footer>
