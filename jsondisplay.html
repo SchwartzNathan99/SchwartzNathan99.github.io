@@ -42,7 +42,7 @@
             
             async function getData() {
                 const res = await fetch("jsondata.json");
-                const data = await res.json();
+                data = JSON.parse(await res.json());
 
               let text = "<table border='1'>"
               for (let x in data)
