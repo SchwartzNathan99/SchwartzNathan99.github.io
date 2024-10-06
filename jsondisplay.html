@@ -41,13 +41,13 @@
         <script>
             
             async function getData() {
-                //const res = await fetch("jsondata.json");
-                data = JSON.parse(fetch("jsondata.json"));
+                const res = await fetch("jsondata.json");
+                const data = await res.json();
 
               let text = "<table border='1'>"
               for (let x in data)
               {
-                text += "<tr><td>" + data[x].title + "</td></tr>";
+                text += "<tr><td>" + data[x].title + " : " + data[x].year + "</td></tr>";
               }
               text += "</table>"    
               document.getElementById("table").innerHTML = text;
