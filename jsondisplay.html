@@ -35,22 +35,19 @@
     </head>
     <body>
         <h1>
-            Nathan Schwartz's Website
+            List of Kingdom Hearts Games
         </h1>
         <p id="table"></p>
         <script>
             
             async function getData() {
-                const res = await fetch("jsondata.json");
-                const data = await res.json();
-
-              let text = "<table border='1'>"
-              for (let x in data)
-              {
-                text += "<tr><td>" + data[x].title + " : " + data[x].year + "</td></tr>";
-              }
-              text += "</table>"    
-              document.getElementById("table").innerHTML = text;
+                const myObj = JSON.parse("jsondata.json");
+                let text = "<table border='1'>"
+                for (let x in myObj) {
+                  text += "<tr><td>" + myObj[x].title + " : " + myObj[x].year + "</td></tr>";
+                }
+                text += "</table>"    
+                document.getElementById("table").innerHTML = text;
             }
 
             getData();
