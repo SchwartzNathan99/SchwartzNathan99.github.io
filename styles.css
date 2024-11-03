@@ -66,3 +66,27 @@ footer {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+@media only screen and (max-width: 640px) {
+
+  section h1 {
+     font-size: 1.5em;
+  }
+  
+  section p {
+     font-size: 0.9em;
+  }
+  
+  nav {
+     order: 99;
+  }
+  
+  footer {
+     order: 100;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+
+
+}
