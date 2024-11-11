@@ -13,7 +13,7 @@ $(document).ready(function() {
   // Title - Shows up in the first columnas a title for the group
   // Courses - Array of courses using the same text as courselist - Course
   // Hours - Total Number of hours in a category 
-  var semesters = ["Fall 2019", "Spring 2020", "Summer 2020", "Fall 2020", "Spring 2021", "Summer 2021"]
+  var semesters = ["Fall 2024", "Spring 2025", "Summer 2025", "Fall 2025", "Spring 2026", "Summer 2026"]
   
   var coursegroups = [{
     "Title": "General Ed Prerequisites",
