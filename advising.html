@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+​<html lang = "en">
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Classes
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="comingsoon.html">Class 1</a>
+              <a href="comingsoon.html">Class 2</a>
+              <a href="comingsoon.html">Class 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">My Assignments
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="form.html">Assignment 1</a>
+              <a href="calculator.html">Assignment 2</a>
+              <a href="spirograph.html">Assignment 3</a>
+              <a href="jsondisplay.html">Assignment 4</a>
+              <a href="carddealer.html">Assignment 5</a>
+              <a href="animation.html">Assignment 9</a>
+              <a href="advising.html">Assignment 11</a>
+            </div>
+        </div>
+    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="COP 4813 Class Content">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Nathan Schwartz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-ui-1.14.0\external\jquery\jquery.js"></script>
+        <script src="jquery-ui-1.14.0\jquery-ui.min.js"></script>
+        <link href="styles.css" rel="stylesheet" />
+        <link href="advising.css" rel="stylesheet" />
+        <title>Nathan Schwartz's Website</title>
+    </head>
+    <body>
+        <h1>
+            BSIT Quick Class Advisor
+          </h1>
+          <p>
+          This quick advisor allows for quick planning of course schedules. <br/><br/>To use the planner first check all courses that you 
+          have previously completed. If you have taken a course equivalent to a specific you should check that course. 
+          Once you have completed checking all courses you have taken you can plan course directly by clicking on a course 
+          in any semester or use the automated tools to plan a draft schedule. You can create a printable schedule after completing
+          your plans. This tool is meant to be a preliminary tool to help students in planning and students should still seek regular advising.
+          </p>
+          <table>
+          <tr>
+            <td><input type="button" value="Fill Out Form and Click for Printable Schedule" id="print"  class="printbutton"/><br/><br/>
+            <input type="button" value="Create a Part Time Schedule (~6 hours/term)" id="hour_6"  class="printbutton"/><br/><br/>
+            <input type="button" value="Create a Full Time Schedule (>12 hours/term)" id="hour_12"  class="printbutton"/>
+          </td>
+          <td style="padding: 10px;">
+            <div id="output">
+            
+            </div>
+          </td>
+          </tr><tr></tr></table>
+          <br/>If you have taken a class - click the course in the first column. To plan a class - click the semester
+          <br/>
+          <div id="message">
+          
+          </div>
+          <table border="1" id="ctable">
+            <tbody>
+          <tr style="font-size: 30px; background-color:#99ff99;" >
+            <td>Click If Courses Taken</td>
+            <td colspan="6">Click to Schedule Class in Semester</td>
+          </tr>
+            </tbody>
+          </table>
+          <div id="box"></div>
+    </body>
+    
+</html>
