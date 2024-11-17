@@ -1,5 +1,8 @@
 [
     { "system":"System", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
-    { "system":"System", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
-    { "system":"System", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" }
+    { "system":"WordPress", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
+    { "system":"SquareSpace", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
+    { "system":"Wix", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
+    { "system":"Joomla", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
+    { "system":"Webflow", "produced":"Produced/Sold By", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" }
 ]
