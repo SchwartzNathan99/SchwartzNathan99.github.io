@@ -41,7 +41,24 @@
         <title>Nathan Schwartz's Website</title>
     </head>
     <body>
-        
+        <h1>
+            CMS Examples
+        </h1>
+        <p id="table"></p>
+        <script>
+            async function getData() {
+                const res = await fetch('cms.json');
+                const data = await res.json();
+                let text = "<table border='1'>"
+                for (let x in data) {
+                  text += "<tr><td>" + data[x].system + " : " + data[x].produced +  + " : " + data[x].tech  + " : " + data[x].capabilities + " : " + data[x].limitations + " : " + data[x].example + "</td></tr>";
+                }
+                text += "</table>"    
+                document.getElementById("table").innerHTML = text;
+            }
+
+            getData();
+        </script>
     </body>
     
 </html>
