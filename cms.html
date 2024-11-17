@@ -51,7 +51,7 @@
                 const data = await res.json();
                 let text = "<table border='1'>"
                 for (let x in data) {
-                  text += "<tr><td>" + data[x].system + " </td><td> " + data[x].produced +  + " </td><td> " + data[x].tech  + " </td><td> " + data[x].capabilities + " </td><td> " + data[x].limitations + " </td><td> " + data[x].example + "</td></tr>";
+                  text += "<tr><td>" + data[x].system + " </td><td> " + data[x].produced + " </td><td> " + data[x].tech  + " </td><td> " + data[x].capabilities + " </td><td> " + data[x].limitations + " </td><td> " + data[x].example + "</td></tr>";
                 }
                 text += "</table>"    
                 document.getElementById("table").innerHTML = text;
