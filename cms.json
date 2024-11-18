@@ -1,7 +1,7 @@
 [
     { "system":"WordPress", "produced":"Open Source", "tech":"PHP/MySQL", "capabilities":"Supports themes, Supports plugins, Public API", "limitations":"Security (plugins), Security (updates)", "example":"https://wordpress.org/ " },
-    { "system":"SquareSpace", "produced":"Squarespace, Inc.", "tech":"", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
-    { "system":"Wix", "produced":"Wix.com Ltd.", "tech":"HTML5/Javascript", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
-    { "system":"Joomla", "produced":"Open Source", "tech":"PHP/MySQL", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" },
-    { "system":"Webflow", "produced":"Webflow, Inc.", "tech":"Technology Base", "capabilities":"Major Capabilities", "limitations":"Major Limitations", "example":"Example Site" }
+    { "system":"SquareSpace", "produced":"Squarespace, Inc.", "tech":"SQL/PHP", "capabilities":"Custom CSS, Security Features, Built-in Mobile Websites", "limitations":"Poor SEO/Lack of Marketing Tools, Limited 3rd Party Integration Support", "example":"Example Site" },
+    { "system":"Wix", "produced":"Wix.com Ltd.", "tech":"MySQL/hadoop/Apache HBase/mongoDB", "capabilities":"Mobile Site Editor, Custom Animations, Themes, Add Code", "limitations":"Paywalled Features (Analytics), No Website transfers, Difficult Data Migration, Limited SEO Features", "example":"https://www.animalmusicstudios.com" },
+    { "system":"Joomla", "produced":"Open Source", "tech":"PHP/MySQL", "capabilities":"SEO Optimized out the box, Open Source, Security Features", "limitations":"Limited media management, Content Migration, Limited Customization", "example":"https://streetartaberdeen.org" },
+    { "system":"Webflow", "produced":"Webflow, Inc.", "tech":"MySQL", "capabilities":"Custom Code, CSS filters, Visual Development, Design Interactions without Code", "limitations":"100 max pages, 10,000 max characters, Video size restrictions, No file field uploads for forms except for Businesses", "example":"https://www.conservationguide.org" }
 ]
