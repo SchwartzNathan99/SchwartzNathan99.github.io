@@ -49,7 +49,7 @@
             async function getData() {
                 const res = await fetch('cms.json');
                 const data = await res.json();
-                let text = "<table border='1'>"
+                let text = "<table border='1'> <tr><th> System </th><th> Produced/Sold By </th><th> Technology Base </th><th> Major Capabilities </th><th> Major Limitations </th><th> Example Site </th></tr>"
                 for (let x in data) {
                   text += "<tr><td>" + data[x].system + " </td><td> " + data[x].produced + " </td><td> " + data[x].tech  + " </td><td> " + data[x].capabilities + " </td><td> " + data[x].limitations + " </td><td> " + data[x].example + "</td></tr>";
                 }
