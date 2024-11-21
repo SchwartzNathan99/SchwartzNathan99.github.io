@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-​<html lang = "en">
-    <div class="navbar">
+<html lang="en">
+<div class="navbar">
         <a class="active" href="index.html">Home</a>
         <div class="dropdown">
             <button class="dropbtn">My Classes
@@ -29,8 +29,8 @@
             </div>
         </div>
     </div>
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
         <meta name="description" content="COP 4813 Class Content">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <meta name="author" content="Nathan Schwartz">
@@ -39,27 +39,50 @@
         <script src="jquery-ui-1.14.0\jquery-ui.min.js"></script>
         <link href="styles.css" rel="stylesheet" />
         <link href="advising.css" rel="stylesheet" />
-        <title>Nathan Schwartz's Website</title>
-    </head>
-    <body>
-        <h1>
-            CMS Examples
-        </h1>
-        <p id="table"></p>
-        <script>
-            async function getData() {
-                const res = await fetch('cms.json');
-                const data = await res.json();
-                let text = "<table border='1'> <tr><th> System </th><th> Produced/Sold By </th><th> Technology Base </th><th> Major Capabilities </th><th> Major Limitations </th><th> Example Site </th></tr>"
-                for (let x in data) {
-                  text += "<tr><td>" + data[x].system + " </td><td> " + data[x].produced + " </td><td> " + data[x].tech  + " </td><td> " + data[x].capabilities + " </td><td> " + data[x].limitations + " </td><td> " + data[x].example + "</td></tr>";
-                }
-                text += "</table>"    
-                document.getElementById("table").innerHTML = text;
-            }
+    <title>Assignment 13 - Tank Game</title>
+</head>
+<body>
+    <main>
+        <h1>Tank Game</h1>
 
-            getData();
-        </script>
-    </body>
-    
+
+        <div class="requirements">
+            <h1>1. Selecting a Game Engine</h1>
+            <p>Managing canvas rendering and game logic using JavaScript (with HTML5).</p>
+            <h1>2. Simple Concept</h1>
+            <p>Control a tank using arrow keys, shoot bullets, and destroy targets in real time, offering game interactive experience.</p>
+            <h1>3. Game Development Tools</h1>
+            <p>This game is directly using JavaScript and the HTML5 Canvas API with web technologies.</p>
+            <h1>4. Game Design</h1>
+            <p>The score system and controls provide a structured, simple interface for players.</p>
+        </div>
+
+
+        <div class="game">
+            <canvas id="gameCanvas" width="600" height="400"></canvas>
+        </div>
+
+
+        <div class="controls">
+            <h2>Controls</h2>
+            <p><kbd>↑</kbd> <kbd>↓</kbd> – move forward/backward</p>
+            <p><kbd>←</kbd> <kbd>→</kbd> – rotate left/right</p>
+            <p><kbd>Space</kbd> – fire</p>
+            <p>Targets left: <span id="targetsLeft">15</span></p>
+        </div>
+    </main>
+
+    <div class="alert-box">
+        <div class="alert-box-content" id="alertBoxContent"></div>
+    </div>
+
+    <script src="collision.js"></script>
+    <script src="game.js"></script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
 </html>
